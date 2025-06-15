@@ -123,7 +123,7 @@
                     include 'content/notFound.php';
                   }
           } else {
-            include 'content/dashboard.php';
+            include 'content/order_pickup.php';
             
           }
             ?>

@@ -18,15 +18,6 @@
               <iconify-icon icon="solar:menu-dots-linear" class="nav-small-cap-icon fs-4"></iconify-icon>
               <span class="hide-menu">Home</span>
             </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="?page=dashboard" aria-expanded="false">
-                <i class="ti ti-atom"></i>
-                <span class="hide-menu">Dashboard</span>
-              </a>
-            </li>
-            <!-- ---------------------------------- -->
-            <!-- Dashboard -->
-            <!-- ---------------------------------- -->
              <li class="sidebar-item">
               <a class="sidebar-link justify-content-between"  
                 href="?page=order_pickup" aria-expanded="false">
@@ -38,6 +29,10 @@
                 </div>
               </a>
             </li>
+            <!-- ---------------------------------- -->
+            <!-- Dashboard -->
+            <!-- ---------------------------------- -->
+
             <li class="sidebar-item">
               <a class="sidebar-link justify-content-between"  
                 href="?page=trans_order" aria-expanded="false">
