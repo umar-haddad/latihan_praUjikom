@@ -11,7 +11,7 @@ if (isset($_POST['id_customer'])) {
         $id_order = $rowOrder['id_order'];
 
         // Ambil notes dari trans_order_detail
-        $queryDetail = mysqli_query($config, "SELECT notes FROM trans_order_detail WHERE id_order = '$id_order' LIMIT 1");
+        $queryDetail = mysqli_query($config, "SELECT notes FROM trans_order_detail WHERE id_order = '$id_order'");
         $rowDetail = mysqli_fetch_assoc($queryDetail);
 
         $notes = isset($rowDetail['notes']) ? $rowDetail['notes'] : '-';

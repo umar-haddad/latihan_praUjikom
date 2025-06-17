@@ -9,12 +9,6 @@ $query = mysqli_query($config, "SELECT
     trans_order.order_code,
     customer.customer_name,
     trans_laundry_pickup.pickup_date,
-    (
-        SELECT notes 
-        FROM trans_order_detail 
-        WHERE trans_order_detail.id_order = trans_laundry_pickup.id_order 
-        LIMIT 1
-    ) AS notes
 FROM trans_laundry_pickup
 LEFT JOIN trans_order ON trans_laundry_pickup.id_order = trans_order.id
 LEFT JOIN customer ON trans_laundry_pickup.id_customer = customer.id
